@@ -14,9 +14,7 @@ namespace FormsDemo
         private void buttonGo_Click(object sender, EventArgs e)
         {
             var swapi = new SwapiAccess();
-
             this.starshipBindingSource.DataSource = swapi.GetRandomStarship();
-            //this.starshipBindingSource.ResetBindings(true);
         }
     }
 }

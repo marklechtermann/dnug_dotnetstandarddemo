@@ -1,6 +1,7 @@
 ﻿using MyBusinessLayer;
 using MyBusinessLayer.Models;
 using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Windows.Input;
 
 namespace UWPDemo.ViewModels
@@ -24,7 +25,7 @@ namespace UWPDemo.ViewModels
             set
             {
                 this.starship = value;
-                this.OnPropertyChanged("Starship");
+                this.OnPropertyChanged();
             }
         }
 
@@ -32,7 +33,7 @@ namespace UWPDemo.ViewModels
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private void OnPropertyChanged(string name)
+        private void OnPropertyChanged([CallerMemberName] string name = "")
         {
             var handler = this.PropertyChanged;
             if (handler != null)

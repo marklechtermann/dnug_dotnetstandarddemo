@@ -2,8 +2,9 @@
 {
     public class Results
     {
-        public int count { get; set; }
+        public int Count { get; set; }
 
-        public Starship[] results { get; set; }
+        [Newtonsoft.Json.JsonProperty(PropertyName = "results")]
+        public Starship[] Starships { get; set; }
     }
 }

@@ -9,7 +9,6 @@ namespace CoreDemo.Controllers
     {
         private static SwapiAccess swapiAccess = new SwapiAccess();
 
-        // GET api/values
         [HttpGet]
         public Starship Get()
         {
