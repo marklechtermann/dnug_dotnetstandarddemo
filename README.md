@@ -7,4 +7,6 @@ This short demo contains the following projects:
 * .NET Core WebAPI
 * WinForms App 
 
+[https://www.slideshare.net/MarkLechtermann/short-introduction-net-core-and-net-standard-20](https://www.slideshare.net/MarkLechtermann/short-introduction-net-core-and-net-standard-20)
+
 [http://dotnet-paderborn.azurewebsites.net/](http://dotnet-paderborn.azurewebsites.net/)
